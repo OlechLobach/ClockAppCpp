@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Clock">
+      <UniqueIdentifier>{84bd47bf-a320-4e84-b349-aae81db8aa1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Clock\Digits">
+      <UniqueIdentifier>{5e9cbdcc-4a63-4ff9-b520-e8a15d47914d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{1edafa13-6af8-4c50-b93f-90a1ab478b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{983fff62-16f4-489c-85a6-bf5d0408fa43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{f7f453c9-63f5-4c35-9049-b78711b621a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{333f0558-bed6-48e7-aa56-b899fb22dc0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TimeZone">
+      <UniqueIdentifier>{5e533f1f-9f79-4c4b-a879-7827125a6892}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Digits.h">
+      <Filter>Clock\Digits</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="InnerSize.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="lib.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeZone.h">
+      <Filter>TimeZone</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Clock.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeZone.cpp">
+      <Filter>TimeZone</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
