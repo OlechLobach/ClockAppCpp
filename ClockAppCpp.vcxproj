@@ -26,12 +26,10 @@
     <ClInclude Include="InnerSize.h" />
     <ClInclude Include="lib.h" />
     <ClInclude Include="Time.h" />
-    <ClInclude Include="TimeZone.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Clock.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="TimeZone.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

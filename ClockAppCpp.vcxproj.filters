@@ -19,9 +19,6 @@
     <Filter Include="Main">
       <UniqueIdentifier>{333f0558-bed6-48e7-aa56-b899fb22dc0a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="TimeZone">
-      <UniqueIdentifier>{5e533f1f-9f79-4c4b-a879-7827125a6892}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Digits.h">
@@ -45,9 +42,6 @@
     <ClInclude Include="lib.h">
       <Filter>Library</Filter>
     </ClInclude>
-    <ClInclude Include="TimeZone.h">
-      <Filter>TimeZone</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Clock.cpp">
@@ -55,9 +49,6 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Main</Filter>
-    </ClCompile>
-    <ClCompile Include="TimeZone.cpp">
-      <Filter>TimeZone</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
