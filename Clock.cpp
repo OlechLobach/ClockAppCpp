@@ -165,12 +165,10 @@ void setcursor(bool visible, DWORD size) // set bool visible = 0 - invisible, bo
 }
 
 void Clock::show() {
-	//show time
 	int x, y;
 	int counter = 0;
 	bool flag = true;
-	do
-	{
+	do {
 		setcursor(0, 0);
 		update();
 		float h = this->time->get_hours();
@@ -189,17 +187,22 @@ void Clock::show() {
 		x = output_dots(flag, x, y);
 		x = show_digits(int(s / 10), x, y);
 		x = show_digits(int(s) % 10, x, y);
-		if (counter == 50)
-		{
+
+		// Calculate AM or PM based on hours
+		string am_pm = (int(h) < 12) ? "AM" : "PM";
+
+		// Display AM/PM indicator on the right side
+		gotoxy(97, 18); // Adjust coordinates to display AM/PM indicator on the right side
+		cout << am_pm;
+
+		if (counter == 50) {
 			flag = !flag;
 			counter = 0;
 		}
 		gotoxy(0, 0);
 		counter++;
-		if (s == 57)
-		{
+		if (s == 57) {
 			cout << '\a';
 		}
 	} while (true);
-
 }
